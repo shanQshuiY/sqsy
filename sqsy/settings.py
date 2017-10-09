@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ok88'
 ]
 
 MIDDLEWARE = [
@@ -76,8 +77,12 @@ WSGI_APPLICATION = 'sqsy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'samp_db',
+        'USER': 'root',  # Your db user name, Not used with sqlite3
+        'PASSWORD': '',  # Your db password, Not used with sqlite3
+        'HOST': '',  # Your db host, set to empty string('') for default for localhost,  Not used with sqlite3
+        'PORT': '',  # Your db port, set to empty string('') for default, Not used with sqlite3
     }
 }
 
