@@ -12,3 +12,4 @@ class article(models.Model):
     article_title           = models.CharField(max_length=DEFAULT_TITLE_LEN)
     article_content         = models.TextField()
     article_src             = models.CharField(max_length=DEFAULT_URL_LEN)
+    article_add_time        = models.TimeField(null=True)

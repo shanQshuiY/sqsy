@@ -1,6 +1,9 @@
 {% extends 'ok88/base.html' %}
 {% block body_block %}
+    {% for article in all_article %}
+        <a href="/ok88/detail/{{ article.article_id }}">{{ article.article_title }}</a>
+        </br>
+    {% endfor %}
 
-    index says
 {% endblock %}
 
