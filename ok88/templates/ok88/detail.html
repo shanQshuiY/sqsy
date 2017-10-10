@@ -1,6 +1,16 @@
 {% extends 'ok88/base.html' %}
+{% load staticfiles %}
 {% block body_block %}
     detail says {{ article.article_id }}
     </br>
-    {{ article.article_content }}
+    {% for out_span in out_spans %}
+        </br>
+        {{ out_span.content1 }}
+        </br>
+        <img src="{% static out_span.img %}" alt="{{ out_span.content2 }}" /> <!-- New line -->
+
+        </br>
+        {{ out_span.content2 }}
+    {% endfor %}
+
 {% endblock %}
