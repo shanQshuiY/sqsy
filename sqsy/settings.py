@@ -124,3 +124,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/ok88/static/'
+DEFAULT_THUMB_URL = 'ok88/images/thumbnail/default_thumbnail.jpg'

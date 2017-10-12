@@ -13,3 +13,4 @@ class article(models.Model):
     article_content         = models.TextField()
     article_src             = models.CharField(max_length=DEFAULT_URL_LEN)
     article_add_time        = models.TimeField(null=True)
+    article_thumbs          = models.TextField(null=True)
