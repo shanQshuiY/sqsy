@@ -8,15 +8,11 @@
                 <div class="thumbnail">
                     <div row marketing>
                         {% for thumb in article.article_thumbs %}
-{#                            <img src="{% static "ok88/images/thumbnail/big/thumbnail.jpg" %}" height="100" width="180" alt="...">#}
                             <img src="{% static thumb %}" height="120" width="225" alt="...">
                         {% endfor %}
                     </div>
                     <div class="caption">
-                        <h4>{{ article.article_title }}</h4>
-                        <p><a href="/ok88/detail/{{ article.article_id }}" class="btn btn-primary" role="button">Button</a> <a href="#"
-                                                                                           class="btn btn-default"
-                                                                                           role="button">Button</a></p>
+                        <h4><a href="/ok88/detail/{{ article.article_id }}">{{ article.article_title }}</a></h4>
                     </div>
                 </div>
             {% endfor %}
