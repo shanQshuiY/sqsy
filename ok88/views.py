@@ -50,4 +50,4 @@ def detail(request, article_id):
         # outspan['content'] = outspan['content'].replace('{#br#}', span['img'])
         out_spans.append(outspan)
         print out_spans
-    return render(request, 'ok88/detail.html', {'article':the_article, 'out_spans':out_spans, 'thumbnails':thumbnails})
+    return render(request, 'ok88/detail.html', {'article':the_article, 'out_spans':out_spans})
